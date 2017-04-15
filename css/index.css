@@ -1,0 +1,35 @@
+#title {
+    font-family: monospace;
+    font-size: 4em;
+    background-color: #CBCBCB;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: #DEDEDE;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+}
+
+
