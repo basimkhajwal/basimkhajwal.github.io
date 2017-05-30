@@ -1,5 +1,5 @@
 header {
-    height: 40%;
+    height: 30%;
     position: relative;
 }
 
@@ -64,7 +64,6 @@ nav ul li {
 #about {
     background: linear-gradient(to bottom, rgba(236,240,241, 0), rgb(236, 240, 241) 10%);
     padding-top: 50px;
-    height: 500px;
 }
 
 #about .heading {
@@ -73,13 +72,20 @@ nav ul li {
 
 #about p {
     text-align: center;
-    padding-top: 30px;
+    margin: 30px 50px 0 50px;
+    padding-bottom: 70px;
     font-family: 'Montserrat';
+    font-weight:400;
+    line-height: 150%;
     font-size: 1.3em;
+    color: #2c3e50;
+}
+
+#about p .highlighted {
+    color: #d35400;
 }
 
 #portfolio {
-    /*background-color: #34495e;*/
     height: 1000px;
     background:
             linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -87,11 +93,47 @@ nav ul li {
             linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
             linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
             linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-color: #131313;
+            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424),
+            linear-gradient(to bottom, #131313, #131313);
     background-size: 20px 20px;
 }
 
 #portfolio .heading {
     color: #ecf0f1;
+}
+
+.portfolio-item {
+    background-color: #bdc3c7;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.portfolio-item h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    padding-top: 10px;
+    color: #c0392b;
+}
+
+.portfolio-item h4 {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    padding: 10px 0 10px 0;
+    color: #131313;
+}
+
+.portfolio-item img {
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-item hr {
+    background-color: #131313;
+    height: 1px;
+    border: 0;
+    margin: 20px 0;
 }
