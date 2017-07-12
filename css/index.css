@@ -102,31 +102,42 @@ nav ul li {
     color: #ecf0f1;
 }
 
+#portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 .portfolio-item {
-    background-color: #bdc3c7;
+    background-color: #d7d8d9;
+    /*background-color: smoke;*/
     display: inline-block;
-    flex-direction: column;
+    margin: 30px;
+    width: 400px;
 }
 
 .portfolio-item h3 {
     text-align: center;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Montserrat';
-    padding-top: 10px;
-    color: #c0392b;
+    padding: 10px 0 10px 0;
+    color: #e64435;
 }
 
 .portfolio-item h4 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Montserrat';
-    padding: 10px 0 10px 0;
     color: #131313;
 }
 
 .portfolio-item img {
-    height: 300px;
+    /*height: 100px;*/
+    max-width: 100%;
+    max-height: 100%;
     display: block;
     margin: 0 auto;
 }
