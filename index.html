@@ -9,6 +9,19 @@
         <!-- Page Styles -->
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        
+        <script type="text/javascript">
+        
+            function getAge() {
+                var diff = new Date().getTime() - new Date(2000, 6, 6).getTime(); 
+                return Math.floor(diff / (1000*60*60*24*365.25));
+            }
+            
+            window.onload = function () {
+                document.getElementById("age").innerHTML = getAge();  
+            };
+            
+        </script>
     </head>
     <body>
         <header>
@@ -23,7 +36,7 @@
             <div class="inner-section">
                 <h2 class="heading">About</h2>
                 <p>
-                    Hi, I am a 16 year old <span class="highlighted">extremely interested</span> in technology in all it's various forms.
+                    Hi, I am a <span id="age"></span> year old <span class="highlighted">extremely interested</span> in technology in all it's various forms.
                     I have dabbled in electronics and robotics but my passion is
                     <span class="highlighted">programming</span> and <span class="highlighted">problem solving</span>.
                 </p>
@@ -40,7 +53,6 @@
                         <h3>Little Sticky Destroyer</h3>
                         <h4>Personal Project</h4>
                         <hr />
-
                         <p>
 
                         </p>
@@ -51,17 +63,13 @@
                         <h3>TimeManager</h3>
                         <h4>Work Experience Project</h4>
                         <hr />
-
                         <p>
 
                         </p>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
 
         <footer>
         </footer>
