@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Basim Khajwal</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Google Web Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+  <head>
+    <title>Basim Khajwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
 
-        <!-- Page Styles -->
-        <link rel="stylesheet" type="text/css" href="css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="css/background.css"/>
-        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-        
-        <script type="text/javascript">
-        
-            function getAge() {
-                var diff = new Date().getTime() - new Date(2000, 6, 6).getTime(); 
-                return Math.floor(diff / (1000*60*60*24*365.25));
-            }
-            
-            window.onload = function () {
-                document.getElementById("age").innerHTML = getAge();  
-            };
-            
-        </script>
-    </head>
-    <body>
-        <header>
-            <div class="title" id="desktop-title">
-                <span class="t1">&lt;</span><span class="t2">basim</span><!--
-                --><span class="t3">.</span><!--
-                --><span class="t4">khajwal</span><span class="t5">/&gt;</span>
-            </div>
-            <div class="title" id="mobile-title">
-                <span class="t1">&lt;</span><span class="t2">basim</span><!--
-                -->
-                <span class="t3">.</span><!--
-                --><span class="t4">khajwal</span><span class="t5">/&gt;</span>
-            </div>
-        </header>
-
-        <div id="about">
-            <div class="inner-section">
-                <h2 class="heading">About</h2>
-                <p>
-                    Hi, I am a <span id="age"></span> year old <span class="highlighted">extremely interested</span> in technology in all it's various forms.
-                    I'm extremely passionate about <span class="highlighted">programming</span> and <span class="highlighted">problem solving</span>.
-                </p>
-                <p>
-                  This is a work in progress. More content coming soon...
-                </p>
-            </div>
-        </div>
-
-        <footer>
-        </footer>
-    </body>
+    <!-- Page Styles -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  </head>
+  <body>
+    <section id="header">
+      <h1 id="title">
+        basim.khajwal
+      </h1>
+      <ul id="nav">
+        <li><a href="https://github.com/basimkhajwal">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/basimkhajwal/">LinkedIn</a></li>
+        <li><a href="mailto:basim.khajwal@new.ox.ac.uk">Email</a></li>
+      </ul>
+    </section>
+    <section id="intro-section">
+      <hr>
+      <p>
+        Hi, I'm a 3rd year student at the University of Oxford, studying Mathematics and
+        Computer Science.
+      </p>
+      <p>
+        I'm extremely interested in technology in all its various forms, with a passion for
+        programming and problem solving.
+      </p>
+    </section>
+    <section>
+      <h3>
+        Interests
+      </h3>
+      <ol>
+        <li>Web Development</li>
+        <li>Functional Programming</li>
+        <li>Machine Learning</li>
+        <li>Competitive Programming</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Skills </h3>
+      <ol>
+        <li>Typescript</li>
+        <li>Java</li>
+        <li>Scala</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Data Science</li>
+        <li>Perl</li>
+      </ol>
+    </section>
+    <section id="experience-section">
+      <h3>Experience</h3>
+      <div class="experience">
+        <h4>IOI &amp; BIO</h4>
+        <h5>2016-2018</h5>
+        <p>
+          Three time British national finalist, representing team GB twice at the International Olympiad for Informatics. Won a bronze medal at IOI 2018, Japan.
+        </p>
+      </div>
+      <div class="experience">
+        <h4>CyberStart Challenge</h4>
+        <h5>2018</h5>
+        <p>
+          Online security and penetration testing course, came in the top percentile from over 23,000 participants to reach the live capture-the-flag contest in London.
+        </p>
+      </div>
+      <div class="experience">
+        <h4>ACM ICPC</h4>
+        <h5>2018</h5>
+        <p>
+          Cleared the UK IEPC to represent Oxford University at the
+          North Western European  regional final, coming 6th out of
+          over 120 teams and winning a silver medal.
+        </p>
+      </div>
+      <div class="experience">
+        <h4>CoreFiling Internship</h4>
+        <h5>2019</h5>
+        <p>
+          Full stack web development at a financial tech company,
+          building a tool for exploring large financial dataset
+          schemas.
+        </p>
+      </div>
+      <div class="experience">
+        <h4>OSG Digital</h4>
+        <h5>2020</h5>
+        <p>
+          Worked as part of a team with the Boston Consulting Group
+          to analyse financial data for patterns. (TODO: Expand on this)
+        </p>
+      </div>
+      <div class="experience">
+        <h4>Netcraft Internship</h4>
+        <h5>2020</h5>
+        <p>
+          Software development at an anti-phishing company, worked on
+          both rule-based and machine-learning models that process
+          thousands of fraudulent emails daily.
+        </p>
+      </div>
+    </section>
+    <section id="project-section">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>Ray Tracer</h4>
+        <p>
+          A physically based ray-tracer written from scratch
+          for my EPQ project.
+        </p>
+      </div>
+      <div class="project">
+        <h4>RL-PLayground</h4>
+        <p>
+          An in-browser reinforcement learning playground, implementing
+          Deep Q-Learning and other algorithms for games like Pong and
+          Flappy Bird.
+        </p>
+      </div>
+      <div class="project">
+        <h4>Little Sticky Destroyer</h4>
+        <p>
+          A fun fast-paced arcade game.
+        </p>
+      </div>
+    </section>
+    <section id="footer">
+      <hr>
+      <p>
+        &copy; Basim Khajwal 2020
+      </p>
+    </section>
+  </body>
 </html>

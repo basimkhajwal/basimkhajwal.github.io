@@ -3,3 +3,5 @@
 
 # IntelliJ Idea files
 .idea/
+
+.DS_Store
