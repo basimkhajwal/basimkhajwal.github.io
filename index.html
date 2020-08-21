@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
 
     <!-- Page Styles -->
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ac8e117e0a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section id="header">
@@ -17,9 +19,9 @@
         basim.khajwal
       </h1>
       <ul id="nav">
-        <li><a href="https://github.com/basimkhajwal">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/basimkhajwal/">LinkedIn</a></li>
-        <li><a href="mailto:basim.khajwal@new.ox.ac.uk">Email</a></li>
+        <li><a href="https://github.com/basimkhajwal"><i class="fab fa-2x fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/basimkhajwal/"><i class="fab fa-2x fa-linkedin"></i></a></li>
+        <li><a href="mailto:basim.khajwal@new.ox.ac.uk"><i class="fas fa-2x fa-envelope"></i></a></li>
       </ul>
     </section>
     <section id="intro-section">
@@ -37,7 +39,7 @@
       <h3>
         Interests
       </h3>
-      <ol>
+      <ol class="pills">
         <li>Web Development</li>
         <li>Functional Programming</li>
         <li>Machine Learning</li>
@@ -46,10 +48,12 @@
     </section>
     <section>
       <h3>Skills </h3>
-      <ol>
+      <ol class="pills">
         <li>Typescript</li>
+        <li>Node</li>
         <li>Java</li>
         <li>Scala</li>
+        <li>Haskell</li>
         <li>React</li>
         <li>Python</li>
         <li>Data Science</li>
@@ -62,14 +66,19 @@
         <h4>IOI &amp; BIO</h4>
         <h5>2016-2018</h5>
         <p>
-          Three time British national finalist, representing team GB twice at the International Olympiad for Informatics. Won a bronze medal at IOI 2018, Japan.
+          Three time British national finalist, representing team GB twice at the
+          <a href="https://ioinformatics.org/">International Olympiad for Informatics</a>
+          . Won a bronze medal at IOI 2018, Japan.
         </p>
       </div>
       <div class="experience">
         <h4>CyberStart Challenge</h4>
         <h5>2018</h5>
         <p>
-          Online security and penetration testing course, came in the top percentile from over 23,000 participants to reach the live capture-the-flag contest in London.
+          Online security and penetration testing
+          <a href="https://joincyberdiscovery.com/">course</a>,
+          came in the top percentile from over 23,000 participants
+          to reach the live capture-the-flag contest in London.
         </p>
       </div>
       <div class="experience">
@@ -77,7 +86,8 @@
         <h5>2018</h5>
         <p>
           Cleared the UK IEPC to represent Oxford University at the
-          North Western European  regional final, coming 6th out of
+          North Western European regional final of the
+          <a href="https://icpc.global/">ACM ICPC</a>, coming 6th out of
           over 120 teams and winning a silver medal.
         </p>
       </div>
@@ -85,51 +95,79 @@
         <h4>CoreFiling Internship</h4>
         <h5>2019</h5>
         <p>
-          Full stack web development at a financial tech company,
+          Full stack web development at a
+          <a href="https://www.corefiling.com/">financial tech company</a>,
           building a tool for exploring large financial dataset
           schemas.
         </p>
       </div>
       <div class="experience">
-        <h4>OSG Digital</h4>
-        <h5>2020</h5>
+        <h4>Causal</h4>
+        <h5>2019-2020</h5>
         <p>
-          Worked as part of a team with the Boston Consulting Group
-          to analyse financial data for patterns. (TODO: Expand on this)
+          Worked part-time doing full stack web development at a well-funded
+          <a href="https://www.causal.app/">startup</a>
+          building a numerical modelling tool with a focus on making uncertainties
+          easy to handle.
         </p>
       </div>
       <div class="experience">
         <h4>Netcraft Internship</h4>
         <h5>2020</h5>
         <p>
-          Software development at an anti-phishing company, worked on
-          both rule-based and machine-learning models that process
-          thousands of fraudulent emails daily.
+          Software development at an
+          <a href="https://www.netcraft.com/">anti-phishing company</a>,
+          worked on both rule-based and machine-learning models
+          that process thousands of fraudulent emails daily.
         </p>
       </div>
     </section>
     <section id="project-section">
       <h3>Projects</h3>
       <div class="project">
-        <h4>Ray Tracer</h4>
-        <p>
-          A physically based ray-tracer written from scratch
-          for my EPQ project.
-        </p>
+        <img src="images/raytracer.jpg" >
+        <div>
+          <h4>
+            <a href="https://github.com/basimkhajwal/RayTracer">
+            Ray Tracer 
+              <i class="fab fa-github"></i>
+            </a>
+          </h4>
+          <p>
+            A physically based ray-tracer written from scratch
+            for my EPQ project.
+          </p>
+        </div>
       </div>
       <div class="project">
-        <h4>RL-PLayground</h4>
-        <p>
-          An in-browser reinforcement learning playground, implementing
-          Deep Q-Learning and other algorithms for games like Pong and
-          Flappy Bird.
-        </p>
+        <img src="images/rlp.jpg" >
+        <div>
+          <h4>
+            <a href="https://github.com/basimkhajwal/RL-Playground">
+            RL Playground
+              <i class="fab fa-github"></i>
+            </a>
+          </h4>
+          <p>
+            An
+            <a href="https://basimkhajwal.github.io/RL-Playground/">in-browser</a>
+            reinforcement learning playground, implementing Deep Q-Learning and other algorithms for games like Pong and Flappy Bird.
+          </p>
+        </div>
       </div>
       <div class="project">
-        <h4>Little Sticky Destroyer</h4>
-        <p>
-          A fun fast-paced arcade game.
-        </p>
+        <img src="images/lsd.jpg" >
+        <div>
+          <h4>
+            <a href="https://github.com/basimkhajwal/LSD">
+            Little Sticky Destroyer
+              <i class="fab fa-github"></i>
+            </a>
+          </h4>
+          <p>
+            A fun fast-paced arcade game.
+          </p>
+        </div>
       </div>
     </section>
     <section id="footer">
